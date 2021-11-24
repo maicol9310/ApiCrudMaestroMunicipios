@@ -11,6 +11,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.EntityFrameworkCore;
+using ApiCrudMaestro.Context;
+using Newtonsoft.Json;
+
 
 namespace ApiCrudMaestro
 {
@@ -28,10 +33,16 @@ namespace ApiCrudMaestro
         {
 
             services.AddControllers();
+
+            services.AddDbContext<ApiCrudMaestroDbContext>(
+                options => options.UseSqlServer(
+                    Configuration.GetConnectionString("MunicipiosConnectio")));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiCrudMaestro", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

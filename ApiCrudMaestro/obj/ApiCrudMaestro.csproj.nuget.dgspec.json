@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHAX\\source\\repos\\ApiCrudMaestro\\ApiCrudMaestro\\ApiCrudMaestro.csproj": {}
+    "C:\\Users\\SHAX\\Desktop\\ApiCrudMaestroMunicipios\\ApiCrudMaestro\\ApiCrudMaestro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHAX\\source\\repos\\ApiCrudMaestro\\ApiCrudMaestro\\ApiCrudMaestro.csproj": {
+    "C:\\Users\\SHAX\\Desktop\\ApiCrudMaestroMunicipios\\ApiCrudMaestro\\ApiCrudMaestro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHAX\\source\\repos\\ApiCrudMaestro\\ApiCrudMaestro\\ApiCrudMaestro.csproj",
+        "projectUniqueName": "C:\\Users\\SHAX\\Desktop\\ApiCrudMaestroMunicipios\\ApiCrudMaestro\\ApiCrudMaestro.csproj",
         "projectName": "ApiCrudMaestro",
-        "projectPath": "C:\\Users\\SHAX\\source\\repos\\ApiCrudMaestro\\ApiCrudMaestro\\ApiCrudMaestro.csproj",
+        "projectPath": "C:\\Users\\SHAX\\Desktop\\ApiCrudMaestroMunicipios\\ApiCrudMaestro\\ApiCrudMaestro.csproj",
         "packagesPath": "C:\\Users\\SHAX\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHAX\\source\\repos\\ApiCrudMaestro\\ApiCrudMaestro\\obj\\",
+        "outputPath": "C:\\Users\\SHAX\\Desktop\\ApiCrudMaestroMunicipios\\ApiCrudMaestro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SHAX\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,23 +42,23 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.12, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
