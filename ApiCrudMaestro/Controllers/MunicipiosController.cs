@@ -21,14 +21,12 @@ namespace ApiCrudMaestro.Controllers
             _context = context;
         }
 
-        // GET: api/Municipios
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Municipios>>> GetMunicipios()
         {
             return await _context.Municipios.ToListAsync();
         }
 
-        // GET: api/Municipios/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Municipios>> GetMunicipios(int id)
         {
@@ -42,8 +40,6 @@ namespace ApiCrudMaestro.Controllers
             return municipios;
         }
 
-        // PUT: api/Municipios/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMunicipios(int id, Municipios municipios)
         {
@@ -73,8 +69,6 @@ namespace ApiCrudMaestro.Controllers
             return NoContent();
         }
 
-        // POST: api/Municipios
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Municipios>> PostMunicipios(Municipios municipios)
         {
@@ -84,7 +78,6 @@ namespace ApiCrudMaestro.Controllers
             return CreatedAtAction("GetMunicipios", new { id = municipios.ConsecutivoInterno }, municipios);
         }
 
-        // DELETE: api/Municipios/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMunicipios(int id)
         {
