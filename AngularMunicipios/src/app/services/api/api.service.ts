@@ -12,7 +12,7 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   ListMunicipios():Observable<listMunicipiosI[]>{
-    let dir = "/api/Municipios";
+    let dir = "https://localhost:44385/api/Municipios";
     return this.http.get<listMunicipiosI[]>(dir);
   }
 }

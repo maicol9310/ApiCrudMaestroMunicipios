@@ -1,7 +1,7 @@
 export interface listMunicipiosI{
-    ConsecutivoInterno: number;
-    Nombre: string;
-    Departamento: string;
-    CodigoDane: string;
-    Distrito: string;
+    consecutivoInterno: number;
+    nombre: string;
+    departamento: string;
+    codigoDane: string;
+    distrito: string;
 }

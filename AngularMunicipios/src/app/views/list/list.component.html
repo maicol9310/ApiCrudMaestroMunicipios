@@ -1,10 +1,28 @@
 <app-header></app-header>
 
-
-
-<p>list works!</p>
-
-
-
+<div class="container">
+    <h2>Lista de Municipios</h2><br>
+    <button type="button" class="btn btn-primary" (click)="newMunicipio()">Agregar Municipio</button><br>
+    <table class="table table-striped">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Consecutivo Interno</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Departamento</th>
+            <th scope="col">CodigoDane</th>
+            <th scope="col">Distrito</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pueblo of listmunicipios" (click)="editMunicipio(pueblo.consecutivoInterno)">
+            <th scope="row">{{ pueblo.consecutivoInterno }}</th>
+            <td>{{ pueblo.nombre}}</td>
+            <td>{{ pueblo.departamento }}</td>
+            <td>{{ pueblo.codigoDane }}</td>
+            <td>{{ pueblo.distrito }}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
 
 <app-footer></app-footer>

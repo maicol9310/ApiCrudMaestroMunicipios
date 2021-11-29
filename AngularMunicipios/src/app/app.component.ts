@@ -5,7 +5,6 @@ import { ApiService } from './services/api/api.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ApiService]
 })
 export class AppComponent {
   title = 'AngularMunicipios';

@@ -8,7 +8,7 @@ const routes: Routes = [
   {path:'',redirectTo:'list', pathMatch:'full'},
   {path:'list', component:ListComponent},
   {path:'new', component:NewComponent},
-  {path:'edit', component:EditComponent}
+  {path:'edit/:id', component:EditComponent}
 ];
 
 @NgModule({
