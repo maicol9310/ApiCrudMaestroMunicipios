@@ -1,1 +1,30 @@
-<p>edit works!</p>
+<app-header></app-header>
+
+<div class="container">
+    <form [formGroup]="editForm" (ngSubmit)="postForm(editForm.value.consecutivoInterno, editForm.value)">
+        <div class="form-group">
+            <label for="exampleForControlInput1">ID</label>
+            <input type="text" class="form-control" placeholder="Consecutivo Interno" formControlName="consecutivoInterno">
+        </div>
+        <div class="form-group">
+            <label for="exampleForControlInput1">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre Municipio" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="exampleForControlInput1">Departamento</label>
+            <input type="text" class="form-control" placeholder="Nombre Departamento" formControlName="departamento">
+        </div>
+        <div class="form-group">
+            <label for="exampleForControlInput1">Codigo Dane</label>
+            <input type="text" class="form-control" placeholder="Codigo Dane" formControlName="codigoDane">
+        </div>
+        <div class="form-group">
+            <label for="exampleForControlInput1">Distrito</label>
+            <input type="text" class="form-control" placeholder="Distrito" formControlName="distrito">
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Modificar</button><br>
+    </form>
+</div>
+
+<app-footer></app-footer>
